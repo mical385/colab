@@ -78,6 +78,7 @@ t.sleep(1)
 print("Type in help for help")
 
 while True:
+    spawn()
     ans = input()
     if ans == "help":
         print(help_menu())
