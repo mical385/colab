@@ -10,7 +10,7 @@ dmg_reduction = 0
 health = 100
 coins = 0
 global fighting
-#test
+
 
 def help_menu():
     return ("""
@@ -73,3 +73,5 @@ def fight():
 print("Combat game v1.")
 t.sleep(1)
 print("You will spawn with a weapon with 1-5 damage")
+t.sleep(1)
+print("Type in help for help")
