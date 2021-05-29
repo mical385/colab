@@ -75,7 +75,7 @@ t.sleep(1)
 print("You will spawn with a weapon with 1-5 damage")
 t.sleep(1)
 print("Type in help for help")
-spawn()
+
 while True:
     ans = input()
     if ans == "help":
