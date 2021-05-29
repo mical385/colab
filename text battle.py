@@ -59,7 +59,7 @@ def spawn():
             if chance in range(22, 29):
                 print("A Rare enemy had spawned!")
             if chance in range(29, 33):
-                print("A Godly enemy had spawned!")
+                print("A Epic enemy had spawned!")
             if chance in range(33, 35):
                 print("A Legendary enemy had spawned!")
 
