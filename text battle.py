@@ -34,7 +34,7 @@ The chances of the various types of enemies spawning are down below.
 Common enemy: 11/30 chance of spawning,loot:1-5 coins,HP:25
 Uncommon enemy: 9/30 chance of spawning,loot:5-13,HP:45
 Rare enemy: 6/30 chance of spawning,loot:13-25,HP:90
-Godly enemy: 3/30 chance of spawning,loot:25-50,HP:150
+Epic enemy: 3/30 chance of spawning,loot:25-50,HP:150
 Legendary enemy: 1/30 chance of spawning,loot:50-150,HP:300
 Every 20-60 seconds,a enemy will spawn based on the above spawn rates.
 there must be no other enemies for it to spawn
@@ -50,15 +50,15 @@ def spawn():
             t.sleep(r.randint(spawn_start_rate, spawn_end_rate))
             chance = r.randint(1, 30)
             if chance in range(1, 12):
-                return "A Common enemy had spawned!"
+                print( "A Common enemy had spawned!")
             if chance in range(12, 22):
-                return "A Uncommon enemy had spawned!"
+                print( "A Uncommon enemy had spawned!")
             if chance in range(22, 29):
-                return "A Rare enemy had spawned!"
+                print("A Rare enemy had spawned!")
             if chance in range(29, 33):
-                return "A Godly enemy had spawned!"
+                print("A Godly enemy had spawned!")
             if chance in range(33, 35):
-                return "A Legendary enemy had spawned!"
+                print("A Legendary enemy had spawned!")
 
 
 def fight():
@@ -75,7 +75,7 @@ t.sleep(1)
 print("You will spawn with a weapon with 1-5 damage")
 t.sleep(1)
 print("Type in help for help")
-spawn()
+
 while True:
     ans = input()
     if ans == "help":
@@ -84,3 +84,5 @@ while True:
         pass
     elif ans == "help":
         pass
+    else:
+        print("Invalid options,please type help for help.")
