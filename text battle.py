@@ -10,9 +10,6 @@ dmg_reduction = 0
 health = 100
 coins = 0
 global fighting
-print("Combat game v1.")
-t.sleep(1)
-print("You will spawn with a weapon with 1-5 damage")
 
 
 def help_menu():
@@ -30,7 +27,7 @@ def help_menu():
         you can use in in battle ode,but it will let you lose your turn
     shop:Enters shop mode(not in battle mode)
         The shop sells you healing,one time damage increase and upgrades.
-    
+
     -------------------------------------------------------------------
     The chances of the various types of enemies spawning are down below.
     --------------------------------------------------------------------
@@ -71,3 +68,8 @@ def fight():
     elif len(enemy) != 0:
         fighting = 1
         return "You drew your weapon and get ready for a battle with a", enemy[0], "enemy!"
+
+
+print("Combat game v1.")
+t.sleep(1)
+print("You will spawn with a weapon with 1-5 damage")
