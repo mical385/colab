@@ -47,26 +47,25 @@ You have a 1/8 chance of performing a critical hit,which will deal 20% more dama
 
 
 def spawn():
-    while True:
-        if len(enemy) == 0:
-            t.sleep(r.randint(spawn_start_rate, spawn_end_rate))
-            chance = r.randint(1, 30)
-            if chance in range(1, 12):
-                print("A Common enemy had spawned!")
-            if chance in range(12, 22):
-                print("A Uncommon enemy had spawned!")
-            if chance in range(22, 29):
-                print("A Rare enemy had spawned!")
-            if chance in range(29, 33):
-                print("A Epic enemy had spawned!")
-            if chance in range(33, 35):
-                print("A Legendary enemy had spawned!")
+    if len(enemy) == 0:
+        t.sleep(r.randint(spawn_start_rate, spawn_end_rate))
+        chance = r.randint(1, 30)
+        if chance in range(1, 12):
+            print("A Common enemy had spawned!")
+        if chance in range(12, 22):
+            print("A Uncommon enemy had spawned!")
+        if chance in range(22, 29):
+            print("A Rare enemy had spawned!")
+        if chance in range(29, 33):
+            print("A Epic enemy had spawned!")
+        if chance in range(33, 35):
+            print("A Legendary enemy had spawned!")
 
 
 def fight():
     global fighting
     if len(enemy) == 0:
-        return "You drew your weapon and got ready to attack,but no one came in response."
+        return "You drew your weapon and got ready to attack,but nobody came."
     elif len(enemy) != 0:
         fighting = 1
         return "You drew your weapon and get ready for a battle with a", enemy[0], "enemy!"
