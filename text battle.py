@@ -10,7 +10,7 @@ dmg_reduction = 0
 health = 100
 coins = 0
 global fighting
-
+#test
 
 def help_menu():
     return ("""
