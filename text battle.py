@@ -1,6 +1,6 @@
 import random as r
 import time as t
-
+from threading import Thread
 # import statements
 enemy = []
 spawn_start_rate = 20
