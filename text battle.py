@@ -1,6 +1,6 @@
 import random as r
 import time as t
-
+# import statements
 enemy = []
 spawn_start_rate = 20
 spawn_end_rate = 60
@@ -10,7 +10,7 @@ dmg_reduction = 0
 health = 100
 coins = 0
 global fighting
-
+# stats
 
 def help_menu():
     return ("""
