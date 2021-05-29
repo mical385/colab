@@ -52,13 +52,13 @@ def spawn():
             if chance in range(1, 12):
                 return "A Common enemy had spawned!"
             if chance in range(12, 22):
-                return "A Common enemy had spawned!"
+                return "A Uncommon enemy had spawned!"
             if chance in range(22, 29):
-                return "A Common enemy had spawned!"
+                return "A Rare enemy had spawned!"
             if chance in range(29, 33):
-                return "A Common enemy had spawned!"
+                return "A Godly enemy had spawned!"
             if chance in range(33, 35):
-                return "A Common enemy had spawned!"
+                return "A Legendary enemy had spawned!"
 
 
 def fight():
