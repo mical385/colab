@@ -73,3 +73,5 @@ def fight():
 print("Combat game v1.")
 t.sleep(1)
 print("You will spawn with a weapon with 1-5 damage")
+
+
