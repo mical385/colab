@@ -41,7 +41,7 @@ there must be no other enemies for it to spawn
 ----------------------------------------------
 There will also be a chance that the enemy will miss,depending on the exhaustion
 You have a 1/8 chance of performing a critical hit,which will deal 20% more damage.
-    """)
+""")
 
 
 def spawn():
@@ -50,9 +50,9 @@ def spawn():
             t.sleep(r.randint(spawn_start_rate, spawn_end_rate))
             chance = r.randint(1, 30)
             if chance in range(1, 12):
-                print( "A Common enemy had spawned!")
+                print("A Common enemy had spawned!")
             if chance in range(12, 22):
-                print( "A Uncommon enemy had spawned!")
+                print("A Uncommon enemy had spawned!")
             if chance in range(22, 29):
                 print("A Rare enemy had spawned!")
             if chance in range(29, 33):
